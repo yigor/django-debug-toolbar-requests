@@ -1,4 +1,4 @@
-{% load requests_toolbar_tags %}
+{% load static requests_toolbar_tags %}
 <style type="text/css">
     .requests-toolbar-hidden {
         display: none;
@@ -63,11 +63,4 @@
         {% endfor %}
     </tbody>
 </table>
-<script>
-    (function ($, publicAPI) {
-        $('.requests-toolbar-open').click(function(e) {
-            var element = $(e.target);
-            $(element.attr('href')).toggle();
-        })
-    })(djdt.jQuery, djdt);
-</script>
+<script src="{% static 'requests_toolbar/requests_toolbar.js' %}"></script>
