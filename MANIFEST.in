@@ -1,3 +1,4 @@
 include README.rst
 include LICENSE
 recursive-include requests_toolbar/templates *
+recursive-include requests_toolbar/static *
